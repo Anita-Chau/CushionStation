@@ -103,8 +103,8 @@ router.post('/checkout-process', function(req, res) {
       "payment_method": "paypal"
     },
     "redirect_urls": {
-      "return_url": "http://localhost/checkout/checkout-success",
-      "cancel_url": "http://localhost/checkout/checkout-cancel"
+      "return_url": `http://${req.headers.host}/checkout/checkout-success`,
+      "cancel_url": `http://${req.headers.host}/checkout/checkout-cancel`
     },
     "transactions": [{
       "item_list": {
