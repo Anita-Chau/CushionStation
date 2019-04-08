@@ -16,7 +16,7 @@ var MongoStore        = require('connect-mongo')(session);
 var mongoose          = require('mongoose');
 
 // mongoose.connect('mongodb://localhost/cushionStation', { useNewUrlParser: true, useCreateIndex: true, });
-mongoose.connect('mongodb+srv://anitachau:cherry1995@cluster0-oy7ay.gcp.mongodb.net/test?retryWrites=true',  { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.connect('mongodb://heroku_7b0275cn:a12gketdqnk3be45ol40qjnvp7@ds155313.mlab.com:55313/heroku_7b0275cn', { useNewUrlParser: true, useCreateIndex: true, });
 
 var index = require('./routes/index');
 var users = require('./routes/users');
