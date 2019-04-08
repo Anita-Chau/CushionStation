@@ -15,7 +15,8 @@ var passport          = require('passport');
 var MongoStore        = require('connect-mongo')(session);
 var mongoose          = require('mongoose');
 
-mongoose.connect('mongodb://localhost/cushionStation', { useNewUrlParser: true, useCreateIndex: true, });
+// mongoose.connect('mongodb://localhost/cushionStation', { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.connect('mongodb+srv://anitachau:cherry1995@cluster0-oy7ay.gcp.mongodb.net/test?retryWrites=true');
 
 var index = require('./routes/index');
 var users = require('./routes/users');

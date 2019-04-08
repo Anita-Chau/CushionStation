@@ -7,8 +7,8 @@ var mongoose    = require('mongoose');
 var colour      = require('colour');
 
 
-//mongoose.connect('mongodb://localhost/shoppingApp');
-mongoose.connect('mongodb://localhost/cushionStation', { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.connect('mongodb+srv://anitachau:cherry1995@cluster0-oy7ay.gcp.mongodb.net/test?retryWrites=true');
+// mongoose.connect('mongodb://localhost/cushionStation', { useNewUrlParser: true, useCreateIndex: true, });
 
 function deleteVariants(callback)
 {
