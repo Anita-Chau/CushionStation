@@ -8,8 +8,8 @@ var Order                   = require('../models/order');
 var Department              = require('../models/department');
 var Discount                = require('../models/discount');
 
-var app = express();
-var port = process.env.PORT || 80;
+// var app = express();
+// var port = process.env.PORT || 80;
 
 /////////////////////////////////////////////////////////////////////
 //
@@ -365,7 +365,7 @@ function ensureAuthenticated(req, res, next){
     }
 };
 
-app.listen(port, function() {
-  console.log('Our app is running on http://localhost:' + port);
-})
+// app.listen(port, function() {
+//   console.log('Our app is running on http://localhost:' + port);
+// })
 module.exports = router;
